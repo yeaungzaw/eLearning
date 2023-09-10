@@ -7,28 +7,48 @@
     <title>Document</title>
     <link rel="stylesheet" href="../dist/output.css">
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
-<body>
+<body class="font-heebo">
 
     <!-- Testimonials -->
     <section class="container mx-auto">
 
         <div class="flex justify-center items-center h-screen">
 
-            <div class="flex flex-col gap-y-12 mx-10 text-text-color">
+            <div class="mx-6 text-text-color">
 
                 <!-- Testimonial Title -->
-                <div class="text-center">
-                    <h6 class="font-bold text-primary mb-2">TESTIMONIAL</h6>
-                    <h1 class="font-bold text-4xl">Our Students Say!</h1>
+                <!-- <div class="text-center relative">
+                    <div class="absolute z-10 top-[5px] left-[25%] w-[50%] h-[2px] bg-primary"></div>
+                    <h6 class="z-20 font-bold text-primary mb-2">TESTIMONIAL</h6>
+                    <h1 class="font-bold text-4xl mb-12">Our Students Say!</h1>
+                </div> -->
+
+                <div class="flex flex-col justify-center items-center gap-1">
+                    <div class="flex justify-center">
+                        <div class="relative mt-[5px]">
+                            <div class="w-[45px] h-[2px] bg-primary absolute right-0 top-[2%]"></div>
+                            <div class="w-[60px] h-[2px] bg-primary absolute right-0 top-[30%]"></div>
+                        </div>
+                        <h1 class="font-bold text-primary px-4 mb-2">TESTIMONIAL</h1>
+                        <div class="relative mt-[5px]">
+                            <div class="w-[45px] h-[2px] bg-primary absolute left-0 top-[2%]"></div>
+                            <div class="w-[60px] h-[2px] bg-primary absolute left-0 top-[30%]"></div>
+                        </div>
+                    </div>
+                    
+                    <h1 class="font-semibold text-5xl mb-12">Our Students Say!</h1>
                 </div>
 
                 <!-- Card parent -->
-                <div class="flex gap-x-8">
+                <div class="flex mb-6">
                     <!-- Card -->
-                    <div class="w-1/3 text-center flex flex-col justify-center items-center gap-y-6">
+                    <div class="max-w-[515px] w-full text-center flex flex-col justify-center items-center gap-y-4">
+                        <!-- Card title -->
                         <div class="flex justify-center items-center flex-col gap-y-2">
                             <img class="rounded-full border-2 border-gray p-2"
                                 src="https://demo.htmlcodex.com/2151/elearning-html-template/img/testimonial-2.jpg"
@@ -39,43 +59,10 @@
                             </div>
                         </div>
 
-                        <p class="bg-secondary p-6 text-text-color">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi mollitia velit atque
-                            molestias doloremque a veniam nemo.
-                        </p>
-                    </div>
-                    <!-- Card -->
-                    <div class="w-1/3 text-center flex flex-col justify-center items-center gap-y-6">
-                        <div class="flex justify-center items-center flex-col gap-y-2">
-                            <img class="rounded-full border-2 border-gray p-2"
-                                src="https://demo.htmlcodex.com/2151/elearning-html-template/img/testimonial-3.jpg"
-                                alt="">
-                            <div>
-                                <h1 class="font-bold text-xl">Client Name</h1>
-                                <p>Profession</p>
-                            </div>
-                        </div>
-
+                        <!-- Card body -->
                         <p class="bg-primary p-6 text-white">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi mollitia velit atque
-                            molestias doloremque a veniam nemo.
-                        </p>
-                    </div>
-                    <!-- Card -->
-                    <div class="w-1/3 text-center flex flex-col justify-center items-center gap-y-6">
-                        <div class="flex justify-center items-center flex-col gap-y-2">
-                            <img class="rounded-full border-2 border-gray p-2"
-                                src="https://demo.htmlcodex.com/2151/elearning-html-template/img/testimonial-4.jpg"
-                                alt="">
-                            <div>
-                                <h1 class="font-bold text-xl">Client Name</h1>
-                                <p>Profession</p>
-                            </div>
-                        </div>
-
-                        <p class="bg-secondary p-6 text-text-color">
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi mollitia velit atque
-                            molestias doloremque a veniam nemo.
+                            Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam et eos. Clita
+                            erat ipsum et lorem et sit.
                         </p>
                     </div>
                 </div>
@@ -95,12 +82,13 @@
     </section>
 
     <!-- Footer -->
-    <section class="bg-text-color text-white pt-20 pb-5">
+    <section class="bg-text-color text-white pt-14">
 
-        <div class="container mx-auto flex px-12 pb-12 gap-x-6">
+        <div class="container mx-auto flex flex-col px-6 pb-12 gap-y-12
+                    md:flex-row md:flex-wrap md:pt-8">
 
             <!-- Quick Link -->
-            <div class="w-1/4">
+            <div class="md:w-1/2 lg:w-2/12">
                 <h1 class="text-2xl font-bold mb-4">Quick Link</h1>
 
                 <div class="flex flex-col gap-y-2 text-[15px]">
@@ -128,7 +116,7 @@
             </div>
 
             <!-- Contact -->
-            <div class="w-1/4">
+            <div class="md:w-1/2 lg:w-3/12">
                 <h1 class="text-2xl font-bold mb-4">Contact</h1>
 
                 <div class="flex flex-col gap-y-2 text-sm">
@@ -147,16 +135,20 @@
 
                     <!-- brands -->
                     <div class="flex gap-x-[5px]">
-                        <a href="" class="rounded-[35px] w-[35px] h-[35px] border-[1px] border-slate-200 hover:bg-slate-200 hover:text-primary transition-all duration-300 flex justify-center items-center">
+                        <a href=""
+                            class="rounded-[35px] w-[35px] h-[35px] border-[1px] border-slate-200 hover:bg-slate-200 hover:text-primary transition-all duration-300 flex justify-center items-center">
                             <i class="fa-solid fa-brands fa-twitter"></i>
                         </a>
-                        <a href="" class="rounded-[35px] w-[35px] h-[35px] border-[1px] border-slate-200 hover:bg-slate-200 hover:text-primary transition-all duration-300 flex justify-center items-center">
+                        <a href=""
+                            class="rounded-[35px] w-[35px] h-[35px] border-[1px] border-slate-200 hover:bg-slate-200 hover:text-primary transition-all duration-300 flex justify-center items-center">
                             <i class="fa-solid fa-brands fa-facebook"></i>
                         </a>
-                        <a href="" class="rounded-[35px] w-[35px] h-[35px] border-[1px] border-slate-200 hover:bg-slate-200 hover:text-primary transition-all duration-300 flex justify-center items-center">
+                        <a href=""
+                            class="rounded-[35px] w-[35px] h-[35px] border-[1px] border-slate-200 hover:bg-slate-200 hover:text-primary transition-all duration-300 flex justify-center items-center">
                             <i class="fa-solid fa-brands fa-youtube"></i>
                         </a>
-                        <a href="" class="rounded-[35px] w-[35px] h-[35px] border-[1px] border-slate-200 hover:bg-slate-200 hover:text-primary transition-all duration-300 flex justify-center items-center">
+                        <a href=""
+                            class="rounded-[35px] w-[35px] h-[35px] border-[1px] border-slate-200 hover:bg-slate-200 hover:text-primary transition-all duration-300 flex justify-center items-center">
                             <i class="fa-solid fa-brands fa-linkedin"></i>
                         </a>
                     </div>
@@ -165,33 +157,25 @@
             </div>
 
             <!-- Gallery -->
-            <div class="w-1/4">
+            <div class="md:w-1/2 lg:w-4/12">
 
                 <h1 class="text-2xl font-bold mb-4">Gallery</h1>
-                
-                <div class="flex flex-wrap gap-y-2">
-                    <div class="w-1/3">
-                        <img class="w-[85px] h-[59.55px] p-2 bg-white"
+
+                <div class="flex flex-col gap-y-2">
+                    <div class="flex gap-x-2">
+                        <img class="w-1/3 lg:max-w-[101px] lg:max-h-[67px] max-w-[60px] max-h-[43px] p-2 bg-white"
                             src="https://demo.htmlcodex.com/2151/elearning-html-template/img/course-1.jpg" alt="">
-                    </div>
-                    <div class="w-1/3">
-                        <img class="w-[85px] h-[59.55px] p-2 bg-white"
+                        <img class="w-1/3 lg:max-w-[101px] lg:max-h-[67px] max-w-[60px] max-h-[43px] p-2 bg-white"
                             src="https://demo.htmlcodex.com/2151/elearning-html-template/img/course-2.jpg" alt="">
-                    </div>
-                    <div class="w-1/3">
-                        <img class="w-[85px] h-[59.55px] p-2 bg-white"
+                        <img class="w-1/3 lg:max-w-[101px] lg:max-h-[67px] max-w-[60px] max-h-[43px] p-2 bg-white"
                             src="https://demo.htmlcodex.com/2151/elearning-html-template/img/course-3.jpg" alt="">
                     </div>
-                    <div class="w-1/3">
-                        <img class="w-[85px] h-[59.55px] p-2 bg-white"
+                    <div class="flex gap-x-2">
+                        <img class="w-1/3 lg:max-w-[101px] lg:max-h-[67px] max-w-[60px] max-h-[43px] p-2 bg-white"
                             src="https://demo.htmlcodex.com/2151/elearning-html-template/img/course-2.jpg" alt="">
-                    </div>
-                    <div class="w-1/3">
-                        <img class="w-[85px] h-[59.55px] p-2 bg-white"
+                        <img class="w-1/3 lg:max-w-[101px] lg:max-h-[67px] max-w-[60px] max-h-[43px] p-2 bg-white"
                             src="https://demo.htmlcodex.com/2151/elearning-html-template/img/course-3.jpg" alt="">
-                    </div>
-                    <div class="w-1/3">
-                        <img class="w-[85px] h-[59.55px] p-2 bg-white"
+                        <img class="w-1/3 lg:max-w-[101px] lg:max-h-[67px] max-w-[60px] max-h-[43px] p-2 bg-white"
                             src="https://demo.htmlcodex.com/2151/elearning-html-template/img/course-1.jpg" alt="">
                     </div>
                 </div>
@@ -200,27 +184,37 @@
 
 
             <!-- Newsletter -->
-            <div class="w-1/4">
+            <div class="md:w-1/2 lg:w-3/12">
 
                 <h1 class="text-2xl font-bold mb-4">Newsletter</h1>
 
                 <p class="text-base mb-6">Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
 
-                <div class="relative">
-                    <input class="py-4 pl-[3rem]" type="email" name="" id="" placeholder="Your email">
-                    <button class="absolute top-0 right-0 bottom-0 mr-2 my-2 bg-primary border-primary py-[0.375em] px-[0.75rem] hover:bg-primary-hover transition-all duration-300">SignUp</button>
+                <div class="relative w-full max-w-[342px] h-[60px] bg-white">
+                    <input class="absolute py-[18px] pl-[20px] focus:outline-none text-text-color" type="text" name=""
+                        id="" placeholder="Your email">
+                    <button class="absolute py-2 px-4 top-[15%] right-[3%] bg-primary">SignUp</button>
                 </div>
             </div>
         </div>
 
         <!-- Copyright & Nav -->
-        <div class="container mx-auto flex justify-between px-12 border-t-[1px] pt-6 border-gray-700">
-            <p class="text-sm">
-                &copy; <a class="underline" href="https://demo.htmlcodex.com/2151/elearning-html-template/#">Your Site
-                    Name,</a>
-                All Right Reserved. Designed By
-                <a class="underline" href="https://htmlcodex.com/">HTML Codex</a>
-            </p>
+        <div
+            class="container mx-auto flex flex-col items-center justify-center gap-y-3 text-center border-t-[1px] py-6 border-gray-700
+            md:flex-row md:justify-between
+            md:px-6">
+
+            <div class="text-sm flex flex-col gap-y-1 
+                        md:flex-row">
+                <p>
+                    &copy; <a class="underline" href="https://demo.htmlcodex.com/2151/elearning-html-template/#">Your
+                        Site
+                        Name,</a>
+                    All Right Reserved.
+                </p>
+                <p> Designed By <a class="underline" href="https://htmlcodex.com/"> HTML Codex</a></p>
+            </div>
+
 
             <nav class="flex text-right text-sm">
                 <a class="px-5 border-r-[1px] border-gray-700" href="">Home</a>
