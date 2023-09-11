@@ -12,36 +12,81 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
-<body class="font-heebo">
+<body class="flex flex-col justify-between h-screen">
 
     <!-- Testimonials -->
-    <section class="container mx-auto">
+    <section class="container mx-auto my-20">
 
-        <div class="flex justify-center items-center h-screen">
+        <div class="flex flex-col justify-center items-center">
 
             <div class="mx-6 text-text-color">
 
                 <!-- Testimonial Title -->
-                <div class="flex flex-col justify-center items-center gap-1">
+                <div class="font-nunito flex flex-col justify-center items-center gap-1 mb-5">
                     <div class="flex justify-center">
                         <div class="relative mt-[5px]">
                             <div class="w-[45px] h-[2px] bg-primary absolute right-0 top-[2%]"></div>
                             <div class="w-[60px] h-[2px] bg-primary absolute right-0 top-[30%]"></div>
                         </div>
-                        <h1 class="font-bold text-primary px-4 mb-2">TESTIMONIAL</h1>
+                        <h1 class="font-bold text-[16px] text-primary px-4 mb-2">TESTIMONIAL</h1>
                         <div class="relative mt-[5px]">
                             <div class="w-[45px] h-[2px] bg-primary absolute left-0 top-[2%]"></div>
                             <div class="w-[60px] h-[2px] bg-primary absolute left-0 top-[30%]"></div>
                         </div>
                     </div>
-                    
-                    <h1 class="font-semibold text-5xl mb-12">Our Students Say!</h1>
+
+                    <h1 class="font-bold text-[28px] mb-12 sm:text-[30px] md:text-[38px] lg:text-[40px]">Our Students Say!</h1>
                 </div>
 
+
                 <!-- Card parent -->
-                <div class="flex mb-6">
-                    <!-- Card -->
-                    <div class="max-w-[515px] w-full text-center flex flex-col justify-center items-center gap-y-4">
+                <div class="font-heebo flex flex-col flex-wrap justify-center items-center mb-6 gap-y-4
+                            sm:gap-x-4 sm:flex-row">
+                    <!-- Card 1 -->
+                    <div
+                        class="max-w-[390px] text-center flex flex-col justify-center items-center gap-y-4">
+                        <!-- Card title -->
+                        <div class="flex justify-center items-center flex-col gap-y-2">
+                            <img class="rounded-full border-2 border-gray p-2"
+                                src="https://demo.htmlcodex.com/2151/elearning-html-template/img/testimonial-2.jpg"
+                                alt="">
+                            <div>
+                                <h1 class="font-bold text-xl">Client Name</h1>
+                                <p>Profession</p>
+                            </div>
+                        </div>
+
+                        <!-- Card body -->
+                        <p class="bg-primary p-6 text-white">
+                            Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam et eos. Clita
+                            erat ipsum et lorem et sit.
+                        </p>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div
+                        class="max-w-[390px] text-center flex flex-col justify-center items-center gap-y-4">
+                        <!-- Card title -->
+                        <div class="flex justify-center items-center flex-col gap-y-2">
+                            <img class="rounded-full border-2 border-gray p-2"
+                                src="https://demo.htmlcodex.com/2151/elearning-html-template/img/testimonial-2.jpg"
+                                alt="">
+                            <div>
+                                <h1 class="font-bold text-xl">Client Name</h1>
+                                <p>Profession</p>
+                            </div>
+                        </div>
+
+                        <!-- Card body -->
+                        <p class="bg-primary p-6 text-white">
+                            Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit diam amet diam et eos. Clita
+                            erat ipsum et lorem et sit.
+                        </p>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div
+                        class="max-w-[390px] text-center flex flex-col justify-center items-center gap-y-4">
                         <!-- Card title -->
                         <div class="flex justify-center items-center flex-col gap-y-2">
                             <img class="rounded-full border-2 border-gray p-2"
@@ -62,13 +107,12 @@
                 </div>
 
                 <!-- dots -->
-                <div class="flex gap-x-3 justify-center items-center">
+                <div class="flex gap-x-3 justify-center items-center mb-6">
                     <div class="w-4 h-4 bg-gray-300"></div>
                     <div class="w-4 h-4 bg-gray-300"></div>
                     <div class="w-4 h-4 bg-gray-300"></div>
                     <div class="w-4 h-4 bg-primary"></div>
                 </div>
-
             </div>
 
         </div>
@@ -193,8 +237,7 @@
         </div>
 
         <!-- Copyright & Nav -->
-        <div
-            class="container mx-auto flex flex-col items-center justify-center gap-y-3 text-center border-t-[1px] py-6 border-gray-700
+        <div class="container mx-auto flex flex-col items-center justify-center gap-y-3 text-center border-t-[1px] py-6 border-gray-700
             md:flex-row md:justify-between
             md:px-6">
 
