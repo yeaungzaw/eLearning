@@ -14,6 +14,44 @@
 
 <body class="flex flex-col justify-between h-screen">
 
+    <!-- Nav -->
+    <section class="lg:ml-12 mx-6 lg:mx-0 h-6">
+
+        <div class="flex justify-between items-center pt-6 lg:pt-0 ">
+            <!-- title -->
+            <div class="text-primary">
+                <span class="flex gap-x-4 justify-center items-center">
+                    <i class="fa-solid fa-book text-2xl"></i>
+                    <h1 class="font-bold text-2xl">eLEARNING</h1>
+                </span>
+            </div>
+            <!-- hamburger menu -->
+            <div class="lg:hidden flex flex-col justify-center items-center gap-y-[7px] border-2 px-4 py-2">
+                <div class="w-6 h-[2px] bg-gray-600"></div>
+                <div class="w-6 h-[2px] bg-gray-600"></div>
+                <div class="w-6 h-[2px] bg-gray-600"></div>
+            </div>
+            <!-- Pages and button -->
+            <div class="hidden lg:flex">
+                <!-- Pages -->
+                <div class="flex items-center justify-center text-text-color">
+                    <a class="mr-[30px] hover:text-primary transition-all duration-300" href="">HOME</a>
+                    <a class="mr-[30px] hover:text-primary transition-all duration-300" href="">ABOUT</a>
+                    <a class="mr-[30px] hover:text-primary transition-all duration-300" href="">COURSES</a>
+                    <a class="mr-[30px] hover:text-primary transition-all duration-300" href="">PAGES</a>
+                    <a class="mr-[30px] hover:text-primary transition-all duration-300" href="">CONTACT</a>
+                </div>
+                <!-- Button -->
+                <button
+                    class="flex justify-center items-center gap-x-4 bg-primary hover:bg-primary-hover transition-all duration-300 text-white py-6 leading-6 px-12">
+                    Join Now
+                    <i class="ph-bold ph-arrow-right"></i>
+                </button>
+            </div>
+        </div>
+
+    </section>
+
     <!-- Testimonials -->
     <section class="container mx-auto my-20">
 
@@ -35,7 +73,8 @@
                         </div>
                     </div>
 
-                    <h1 class="font-bold text-[28px] mb-12 sm:text-[30px] md:text-[38px] lg:text-[40px]">Our Students Say!</h1>
+                    <h1 class="font-bold text-[28px] mb-12 sm:text-[30px] md:text-[38px] lg:text-[40px]">Our Students
+                        Say!</h1>
                 </div>
 
 
@@ -43,8 +82,7 @@
                 <div class="font-heebo flex flex-col flex-wrap justify-center items-center mb-6 gap-y-4
                             sm:gap-x-4 sm:flex-row">
                     <!-- Card 1 -->
-                    <div
-                        class="max-w-[390px] text-center flex flex-col justify-center items-center gap-y-4">
+                    <div class="max-w-[390px] text-center flex flex-col justify-center items-center gap-y-4">
                         <!-- Card title -->
                         <div class="flex justify-center items-center flex-col gap-y-2">
                             <img class="rounded-full border-2 border-gray p-2"
@@ -64,8 +102,7 @@
                     </div>
 
                     <!-- Card 2 -->
-                    <div
-                        class="max-w-[390px] text-center flex flex-col justify-center items-center gap-y-4">
+                    <div class="max-w-[390px] text-center flex flex-col justify-center items-center gap-y-4">
                         <!-- Card title -->
                         <div class="flex justify-center items-center flex-col gap-y-2">
                             <img class="rounded-full border-2 border-gray p-2"
@@ -85,8 +122,7 @@
                     </div>
 
                     <!-- Card 3 -->
-                    <div
-                        class="max-w-[390px] text-center flex flex-col justify-center items-center gap-y-4">
+                    <div class="max-w-[390px] text-center flex flex-col justify-center items-center gap-y-4">
                         <!-- Card title -->
                         <div class="flex justify-center items-center flex-col gap-y-2">
                             <img class="rounded-full border-2 border-gray p-2"
@@ -231,7 +267,8 @@
                 <div class="relative w-full max-w-[342px] h-[60px] bg-white">
                     <input class="absolute py-[18px] pl-[20px] focus:outline-none text-text-color" type="text" name=""
                         id="" placeholder="Your email">
-                    <button class="absolute py-2 px-4 top-[15%] right-[3%] bg-primary hover:bg-primary-hover transition-all duration-300">SignUp</button>
+                    <button
+                        class="absolute py-2 px-4 top-[15%] right-[3%] bg-primary hover:bg-primary-hover transition-all duration-300">SignUp</button>
                 </div>
             </div>
         </div>
