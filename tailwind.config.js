@@ -12,6 +12,7 @@ module.exports = {
         'primary-hover': "#2BCAE0",
         'secondary': "#F0FBFC",
         'text-color': "#181D38",
+        'text-color-2': "#52565b",
       }
     },
   },

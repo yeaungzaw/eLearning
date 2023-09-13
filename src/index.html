@@ -12,7 +12,7 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
-<body class="flex flex-col justify-between h-screen">
+<body class="flex flex-col gap-y-20 justify-between h-screen">
 
     <!-- Nav -->
     <section class="lg:ml-12 mx-6 lg:mx-0 h-6">
@@ -52,12 +52,56 @@
 
     </section>
 
+    <!-- Skill Instructors, Online Classes, ... -->
+    <section class="container mx-auto px-6 xl:px-16">
+
+        <!-- Card Parent -->
+        <div class="grid grid-cols-1 gap-y-8 sm:grid-cols-2 sm:gap-x-8 lg:grid-cols-4 lg:gap-x-4">
+
+            <!-- Card 1 -->
+            <div class="flex flex-col items-center justify-center gap-y-6 p-8 bg-secondary hover:bg-primary-hover hover:-translate-y-4 group transition-all duration-300">
+                <i class="fa-solid fa-graduation-cap text-5xl text-primary group-hover:text-white"></i>
+
+                <h1 class="text-xl font-bold text-text-color group-hover:text-white">Skilled Instructors</h1>
+
+                <p class="text-text-color-2 group-hover:text-white text-center">Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam</p>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="flex flex-col items-center justify-center gap-y-6 p-8 bg-secondary hover:bg-primary-hover hover:-translate-y-4 group transition-all duration-300">
+                <i class="fa-solid fa-globe text-5xl text-primary group-hover:text-white"></i>
+
+                <h1 class="text-xl font-bold text-text-color group-hover:text-white">Online Classes</h1>
+
+                <p class="text-text-color-2 group-hover:text-white text-center">Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam</p>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="flex flex-col items-center justify-center gap-y-6 p-8 bg-secondary hover:bg-primary-hover hover:-translate-y-4 group transition-all duration-300">
+                <i class="fa-solid fa-house-chimney text-5xl text-primary group-hover:text-white"></i>
+
+                <h1 class="text-xl font-bold text-text-color group-hover:text-white">Home Projects</h1>
+
+                <p class="text-text-color-2 group-hover:text-white text-center">Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam</p>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="flex flex-col items-center justify-center gap-y-6 p-8 bg-secondary hover:bg-primary-hover hover:-translate-y-4 group transition-all duration-300">
+                <i class="fa-solid fa-book-open text-5xl text-primary group-hover:text-white"></i>
+
+                <h1 class="text-xl font-bold text-text-color group-hover:text-white">Book Library</h1>
+
+                <p class="text-text-color-2 group-hover:text-white text-center">Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam</p>
+            </div>
+
+        </div>
+
+    </section>
+
     <!-- Testimonials -->
-    <section class="container mx-auto my-20">
+    <section class="container mx-auto px-6 ">
 
-        <div class="flex flex-col justify-center items-center">
-
-            <div class="mx-6 text-text-color">
+        <div class="flex flex-col justify-center text-text-color">
 
                 <!-- Testimonial Title -->
                 <div class="font-nunito flex flex-col justify-center items-center gap-1 mb-5">
@@ -79,10 +123,9 @@
 
 
                 <!-- Card parent -->
-                <div class="font-heebo flex flex-col flex-wrap justify-center items-center mb-6 gap-y-4
-                            sm:gap-x-4 sm:flex-row">
+                <div class="font-heebo grid grid-cols-1 gap-y-8 sm:grid-cols-2 sm:gap-x-4 lg:grid-cols-3 lg:gap-x-8">
                     <!-- Card 1 -->
-                    <div class="max-w-[390px] text-center flex flex-col justify-center items-center gap-y-4">
+                    <div class=" text-center flex flex-col justify-center items-center gap-y-4">
                         <!-- Card title -->
                         <div class="flex justify-center items-center flex-col gap-y-2">
                             <img class="rounded-full border-2 border-gray p-2"
@@ -102,7 +145,7 @@
                     </div>
 
                     <!-- Card 2 -->
-                    <div class="max-w-[390px] text-center flex flex-col justify-center items-center gap-y-4">
+                    <div class=" text-center flex flex-col justify-center items-center gap-y-4">
                         <!-- Card title -->
                         <div class="flex justify-center items-center flex-col gap-y-2">
                             <img class="rounded-full border-2 border-gray p-2"
@@ -122,7 +165,7 @@
                     </div>
 
                     <!-- Card 3 -->
-                    <div class="max-w-[390px] text-center flex flex-col justify-center items-center gap-y-4">
+                    <div class="text-center flex flex-col justify-center items-center gap-y-4">
                         <!-- Card title -->
                         <div class="flex justify-center items-center flex-col gap-y-2">
                             <img class="rounded-full border-2 border-gray p-2"
@@ -143,13 +186,12 @@
                 </div>
 
                 <!-- dots -->
-                <div class="flex gap-x-3 justify-center items-center mb-6">
+                <div class="flex gap-x-3 justify-center items-center mt-8 mb-6">
                     <div class="w-4 h-4 border-2 border-slate-300"></div>
                     <div class="w-4 h-4 bg-primary"></div>
                     <div class="w-4 h-4 border-2 border-slate-300"></div>
                     <div class="w-4 h-4 border-2 border-slate-300"></div>
                 </div>
-            </div>
 
         </div>
 
