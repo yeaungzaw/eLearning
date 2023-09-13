@@ -682,6 +682,10 @@ video {
   margin-top: 0.5rem;
 }
 
+.mr-1{
+  margin-right: 0.25rem;
+}
+
 .inline-block{
   display: inline-block;
 }
@@ -1103,6 +1107,11 @@ video {
 .object-cover{
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.object-top{
+  -o-object-position: top;
+     object-position: top;
 }
 
 .p-2{
