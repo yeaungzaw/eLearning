@@ -13,6 +13,7 @@ module.exports = {
         'secondary': "#F0FBFC",
         'text-color': "#181D38",
         'text-color-2': "#52565b",
+        'background-img-color': 'rgba(24, 29, 56, .7)',
       }
     },
   },
