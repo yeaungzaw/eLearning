@@ -7,18 +7,15 @@
     <title>Document</title>
     <link rel="stylesheet" href="../dist/output.css">
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body class="font-heebo">
 
-
     <!-- Nav -->
-    <section class="lg:ml-12 mx-6 lg:mx-0 py-6 lg:py-0">
-
-        <div class="flex justify-between items-center">
+    <section class="sticky top-0 bg-white z-50">
+        
+        <div class="flex justify-between items-center lg:ml-12 lg:mx-0 lg:py-0 mx-6 py-6">
             <!-- title -->
             <div class="text-primary">
                 <span class="flex gap-x-4 justify-center items-center">
@@ -35,16 +32,32 @@
             <!-- Pages and button -->
             <div class="hidden lg:flex">
                 <!-- Pages -->
-                <div class="flex items-center justify-center text-text-color">
-                    <a class="mr-[30px] hover:text-primary transition-all duration-300" href="">HOME</a>
-                    <a class="mr-[30px] hover:text-primary transition-all duration-300" href="">ABOUT</a>
-                    <a class="mr-[30px] hover:text-primary transition-all duration-300" href="">COURSES</a>
-                    <a class="mr-[30px] hover:text-primary transition-all duration-300" href="">PAGES</a>
+                <div class="flex items-center justify-center text-text-color text-[15px] font-medium">
+                    <a class="mr-[30px] hover:text-primary transition-all duration-300" href="#">HOME</a>
+                    <a class="mr-[30px] hover:text-primary transition-all duration-300" href="#">ABOUT</a>
+                    <a class="mr-[30px] hover:text-primary transition-all duration-300" href="#">COURSES</a>
+                    <div class="relative group">
+                        <a class="mr-[30px] hover:text-primary transition-all duration-300" href="">
+                            PAGES
+                            <i class="ph-bold ph-caret-down text-sm"></i>
+                        </a>
+                        <div class="hidden absolute top-[213%] bg-white text-text-color group-hover:flex flex-col w-[180px] pt-2 z-50 font-heebo text-[16px] font-normal transition-all duration-500">
+                            <div class="hover:bg-primary hover:text-white py-1">
+                                <a class="px-4" href="#ourTeam">Our Team</a>
+                            </div>
+                            <div class="hover:bg-primary hover:text-white py-1">
+                                <a class="px-4" href="#testimonial">Testimonial</a>
+                            </div>
+                            <div class="hover:bg-primary hover:text-white py-1">
+                                <a class="px-4" href="#page">404 Page</a>
+                            </div>
+                        </div>
+                    </div>
                     <a class="mr-[30px] hover:text-primary transition-all duration-300" href="">CONTACT</a>
                 </div>
                 <!-- Button -->
                 <button
-                    class="flex justify-center items-center gap-x-4 bg-primary hover:bg-primary-hover transition-all duration-300 text-white py-6 leading-6 px-12">
+                    class="flex justify-center items-center gap-x-4 bg-primary hover:bg-primary-hover transition-all duration-500 text-white py-6 leading-6 px-12">
                     Join Now
                     <i class="ph-bold ph-arrow-right"></i>
                 </button>
@@ -96,11 +109,11 @@
                             <div class="absolute top-[50%] right-0 translate-y-[-50%] flex flex-col gap-y-4">
                                 <span>
                                     <i
-                                        class="fa-solid fa-chevron-left text-lg text-white border border-white py-3 px-4"></i>
+                                        class="fa-solid fa-chevron-left text-lg text-white border border-white py-3 px-4 hover:bg-primary transition-all duration-300"></i>
                                 </span>
                                 <span>
                                     <i
-                                        class="fa-solid fa-chevron-right text-lg text-white border border-white py-3 px-4"></i>
+                                        class="fa-solid fa-chevron-right text-lg text-white border border-white py-3 px-4 hover:bg-primary transition-all duration-300"></i>
                                 </span>
                             </div>
                         </div>
@@ -112,8 +125,6 @@
             </div>
 
         </section>
-
-
 
         <!-- Skill Instructors, Online Classes, ... -->
         <section class="container mx-auto px-6 xl:px-16">
@@ -708,42 +719,42 @@
         <!-- Footer -->
         <section class="bg-text-color text-white pt-14">
 
-            <div class="container mx-auto flex flex-col px-6 xl:px-16 pb-12 gap-y-12
+            <div class="container mx-auto grid md:grid-cols-2 md:gap-x-12 lg:grid-cols-4 px-6 xl:px-16 pb-12 gap-y-12
                     md:flex-row md:flex-wrap md:pt-8">
 
                 <!-- Quick Link -->
-                <div class="md:w-1/2 lg:w-2/12">
+                <div>
                     <h1 class="text-2xl font-bold mb-4">Quick Link</h1>
 
                     <div class="flex flex-col gap-y-2 text-[15px]">
-                        <span class="flex items-center">
+                        <span class="flex items-center group">
                             <i class="text-[15px] ph-bold ph-caret-right mr-[10px]"></i>
-                            <a href="">About Us</a>
+                            <a class="group-hover:tracking-[1px] transition-all duration-500" href="">About Us</a>
                         </span>
-                        <span class="flex items-center">
+                        <span class="flex items-center group">
                             <i class="text-[15px] ph-bold ph-caret-right mr-[10px]"></i>
-                            <a href="">Contact Us</a>
+                            <a class="group-hover:tracking-[1px] transition-all duration-500" href="">Contact Us</a>
                         </span>
-                        <span class="flex items-center">
+                        <span class="flex items-center group">
                             <i class="text-[15px] ph-bold ph-caret-right mr-[10px]"></i>
-                            <a href="">Privacy Policy</a>
+                            <a class="group-hover:tracking-[1px] transition-all duration-500" href="">Privacy Policy</a>
                         </span>
-                        <span class="flex items-center">
+                        <span class="flex items-center group">
                             <i class="text-[15px] ph-bold ph-caret-right mr-[10px]"></i>
-                            <a href="">Terms & Condition</a>
+                            <a class="group-hover:tracking-[1px] transition-all duration-500" href="">Terms & Condition</a>
                         </span>
-                        <span class="flex items-center">
+                        <span class="flex items-center group">
                             <i class="text-[15px] ph-bold ph-caret-right mr-[10px]"></i>
-                            <a href="">FAQs & Help</a>
+                            <a class="group-hover:tracking-[1px] transition-all duration-500" href="">FAQs & Help</a>
                         </span>
                     </div>
                 </div>
 
                 <!-- Contact -->
-                <div class="md:w-1/2 lg:w-3/12">
+                <div>
                     <h1 class="text-2xl font-bold mb-4">Contact</h1>
 
-                    <div class="flex flex-col gap-y-2 text-sm">
+                    <div class="flex flex-col gap-y-2">
                         <span class="flex items-center">
                             <i class="ph-bold ph-map-pin text-[15px] mr-[10px]"></i>
                             <p>123 Street, New York, USA</p>
@@ -781,25 +792,25 @@
                 </div>
 
                 <!-- Gallery -->
-                <div class="md:w-1/2 lg:w-4/12">
+                <div>
 
                     <h1 class="text-2xl font-bold mb-4">Gallery</h1>
 
                     <div class="flex flex-col gap-y-2">
-                        <div class="flex gap-x-2">
-                            <img class="w-1/3 lg:max-w-[101px] lg:max-h-[67px] max-w-[60px] max-h-[43px] p-2 bg-white"
+                        <div class="grid grid-cols-3 gap-x-2">
+                            <img class="max-w-1/3 p-1 bg-white"
                                 src="https://demo.htmlcodex.com/2151/elearning-html-template/img/course-1.jpg" alt="">
-                            <img class="w-1/3 lg:max-w-[101px] lg:max-h-[67px] max-w-[60px] max-h-[43px] p-2 bg-white"
+                            <img class="max-w-1/3 p-1 bg-white"
                                 src="https://demo.htmlcodex.com/2151/elearning-html-template/img/course-2.jpg" alt="">
-                            <img class="w-1/3 lg:max-w-[101px] lg:max-h-[67px] max-w-[60px] max-h-[43px] p-2 bg-white"
+                            <img class="max-w-1/3 p-1 bg-white"
                                 src="https://demo.htmlcodex.com/2151/elearning-html-template/img/course-3.jpg" alt="">
                         </div>
-                        <div class="flex gap-x-2">
-                            <img class="w-1/3 lg:max-w-[101px] lg:max-h-[67px] max-w-[60px] max-h-[43px] p-2 bg-white"
+                        <div class="grid grid-cols-3 gap-x-2">
+                            <img class="max-w-1/3 p-1 bg-white"
                                 src="https://demo.htmlcodex.com/2151/elearning-html-template/img/course-2.jpg" alt="">
-                            <img class="w-1/3 lg:max-w-[101px] lg:max-h-[67px] max-w-[60px] max-h-[43px] p-2 bg-white"
+                            <img class="max-w-1/3 p-1 bg-white"
                                 src="https://demo.htmlcodex.com/2151/elearning-html-template/img/course-3.jpg" alt="">
-                            <img class="w-1/3 lg:max-w-[101px] lg:max-h-[67px] max-w-[60px] max-h-[43px] p-2 bg-white"
+                            <img class="max-w-1/3 p-1 bg-white"
                                 src="https://demo.htmlcodex.com/2151/elearning-html-template/img/course-1.jpg" alt="">
                         </div>
                     </div>
@@ -808,7 +819,7 @@
 
 
                 <!-- Newsletter -->
-                <div class="md:w-1/2 lg:w-3/12">
+                <div>
 
                     <h1 class="text-2xl font-bold mb-4">Newsletter</h1>
 
@@ -828,8 +839,8 @@
             md:flex-row md:justify-between
             px-6 xl:px-16">
 
-                <div class="text-sm flex flex-col gap-y-1 
-                        md:flex-row">
+                <div class="text-sm flex flex-col gap-y-1 md:items-start 
+                        lg:flex-row lg:gap-x-1">
                     <p>
                         &copy; <a class="underline"
                             href="https://demo.htmlcodex.com/2151/elearning-html-template/#">Your
@@ -841,11 +852,11 @@
                 </div>
 
 
-                <nav class="flex text-right text-sm">
-                    <a class="px-5 border-r-[1px] border-gray-700" href="">Home</a>
-                    <a class="px-5 border-r-[1px] border-gray-700" href="">Cookies</a>
-                    <a class="px-5 border-r-[1px] border-gray-700" href="">Help</a>
-                    <a class="px-5" href="">FQAs</a>
+                <nav class="flex text-right text-sm md:self-start">
+                    <a class="pr-5 mr-5 border-r-[1px] border-gray-700" href="">Home</a>
+                    <a class="pr-5 mr-5 border-r-[1px] border-gray-700" href="">Cookies</a>
+                    <a class="pr-5 mr-5 border-r-[1px] border-gray-700" href="">Help</a>
+                    <a class="" href="">FQAs</a>
                 </nav>
             </div>
 
