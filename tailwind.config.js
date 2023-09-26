@@ -102,7 +102,7 @@ module.exports = {
         }
       },
       animation: {
-        fadeInDown: "fadeInDown .5s ease-in",
+        fadeInDown: "fadeInDown .3s ease-in",
         fadeUpDown: "fadeUpDown .5s ease-in",
         slideInDown: "slideInDown 1s ease-in",
         slideInLeft: "slideInLeft 1s ease-in",

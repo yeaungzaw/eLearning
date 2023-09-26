@@ -1670,7 +1670,7 @@ video {
 }
 
 .group:hover .group-hover\:animate-fadeInDown{
-  animation: fadeInDown .5s ease-in;
+  animation: fadeInDown .3s ease-in;
 }
 
 .group:hover .group-hover\:tracking-\[1px\]{
